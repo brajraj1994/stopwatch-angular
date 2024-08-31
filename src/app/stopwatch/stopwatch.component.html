@@ -1,0 +1,8 @@
+<div class="stopwatch-container">
+    <div class="time-display">{{ formatTime() }}</div>
+    <div class="controls">
+        <button (click)="start()" [disabled]="running">Start</button>
+        <button (click)="pauseOrResume()" [disabled]="time === 0">{{ running ? 'Pause' : 'Resume' }}</button>
+        <button (click)="stop()" [disabled]="time === 0">Stop</button>
+    </div>
+</div>
