@@ -20,7 +20,6 @@ export class StopwatchComponent {
   }
 
   pauseOrResume() {
-    debugger;
     if (this.running) {
       clearInterval(this.intervalId);
       this.running = !this.running;
